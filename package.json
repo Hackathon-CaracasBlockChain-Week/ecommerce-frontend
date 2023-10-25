@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@web3modal/wagmi": "^3.1.0",
+    "apexcharts": "^3.44.0",
     "next": "13.5.6",
     "react": "^18",
+    "react-apexcharts": "^1.4.1",
     "react-dom": "^18",
     "viem": "^1.16.6",
     "wagmi": "^1.4.5"
