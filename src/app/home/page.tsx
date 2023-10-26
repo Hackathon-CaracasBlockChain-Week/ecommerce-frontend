@@ -1,4 +1,5 @@
 import Header from "../components/Header"
+import AreaChartsCard from "../components/AreaChartsCard"
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
             </main>
             <footer>
                 Hecho con ❤
+                <AreaChartsCard />
             </footer>
         </>
     )
