@@ -25,7 +25,7 @@ createWeb3Modal({ wagmiConfig, projectId, chains })
 export default function App() {
   return (
     <WagmiConfig config={wagmiConfig}>
-      <h1>Web3Modal Example</h1>
+      <h1>Inicio de Sesión</h1>
       <w3m-button />
     </WagmiConfig>
   )
