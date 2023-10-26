@@ -404,11 +404,8 @@ const AreaChartsCard = () =>  {
           },   
           selection: 'one_year',
     })
-    const data = "Hola"
     return(
         <>
-            <h1>Tabla de Elementos</h1>
-            <br></br>
             <ReactApexChart options={state.options} series={state.series} type="area" height={300}/>
         </>
     )
