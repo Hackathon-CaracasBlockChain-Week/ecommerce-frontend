@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.symbol-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.symbol.symbol-35px .symbol-label {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(55, 201, 152);
+    color: white;
+    padding: 5px 10px;
+}
+
+.symbol-group .symbol-label {
+    position: relative;
+}
+
+.symbol.symbol-circle, .symbol.symbol-circle .symbol-label, .symbol.symbol-circle>img {
+    border-radius: 50%;
+}
