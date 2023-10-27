@@ -54,17 +54,40 @@ export default function Currency() {
                             </div>
                             <div className="mt-5 flex justify-center">
                                 <form className="w-1/2 py-3 px-8 bg-gray-300 border border-gray-300 rounded-lg shadow-md">
-                                    <div className="mb-6">
+                                    <div>
                                         <div className="bg-gray-100 border-gray-100 rounded-lg">
-                                            <div className="p-4">
-                                                <input type="number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="0.0" />
+                                            <div className="p-4 flex flex-row">
+                                                <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                                                    <option selected disabled>Selecciona un País</option>
+                                                    <option value="VES">Venezuela</option>
+                                                    <option value="COP">Colombia</option>
+                                                    <option value="ARS">Argentina</option>
+                                                </select>
+                                                <input type="number" className="bg-gray-100 border-gray-100 text-end text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="0.0" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="mb-6">
+                                    <div className="flex text-center justify-center">
+                                        <div className="bg-gray-400 rounded-full p-2 cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrows-down-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M17 3l0 18"></path>
+                                                <path d="M10 18l-3 3l-3 -3"></path>
+                                                <path d="M7 21l0 -18"></path>
+                                                <path d="M20 6l-3 -3l-3 3"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div>
                                         <div className="bg-gray-100 border-gray-100 rounded-lg">
-                                            <div className="p-4">
-                                                <input type="number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="0.0" />
+                                            <div className="p-4 flex flex-row">
+                                                <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                                                    <option selected disabled>Selecciona un País </option>
+                                                    <option value="VES">Venezuela</option>
+                                                    <option value="COP">Colombia</option>
+                                                    <option value="ARS">Argentina</option>
+                                                </select>
+                                                <input type="number" className="bg-gray-100 border-gray-100 text-end text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="0.0" />
                                             </div>
                                         </div>
                                     </div>
