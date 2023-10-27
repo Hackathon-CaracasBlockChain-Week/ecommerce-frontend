@@ -3,23 +3,24 @@ import Footer from "../components/Footer";
 import AreaChartsCard from "../components/AreaChartsCard";
 import PieChartsCard from "../components/PieChartsCard";
 
+
 export default function Dashboard() {
 
     const newClientsList = [
         {
-            name: 'A'
+            name: 'John'
         },
         {
-            name: 'B'
+            name: 'Isaac'
         },
         {
-            name: 'C'
+            name: 'Matias'
         },
         {
-            name: 'D'
+            name: 'Maria'
         },
         {
-            name: 'E'
+            name: 'Nicolas'
         }
     ];
 
@@ -168,6 +169,7 @@ export default function Dashboard() {
                                 </div>
                             </div>
                         </div>
+                        {/* <PopChat messages={msgs} /> */}
                     </div>
                 </div>
             </main>
