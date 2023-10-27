@@ -5,9 +5,9 @@ export default function PaymentLandingPage() {
         <>
             <Header />
             <main className="h-screen w-full bg-gray-lighter p-5">
-                <div className="flex items-start justify-around">
-                    <div className="w-full h-1/2 max-w-sm p-4 bg-[#f6f7f9]">
-                        <h3 className="mb-3 text-base font-semibold text-gray-900 md:text-xl">
+                <div className="flex items-start justify-around mx-auto pt-24 px-48 lg:px-0">
+                    <div className="w-full h-1/2 max-w-sm p-4 bg-[#D2E0FB] rounded-lg shadow">
+                        <h3 className="mb-3 text-base font-semibold text-violet-[#473e6b] md:text-xl text-violet-[#473E6B]">
                             ¿Cómo quieres pagar?
                         </h3>
                         <ul className="my-3 space-y-3">
@@ -38,29 +38,63 @@ export default function PaymentLandingPage() {
                                 </a>
                             </li>
                         </ul>
+                        <ul className="my-3 space-y-3">
+                            <li className="">
+                                <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                    Pago Móvil
+                                </a>
+                            </li>
+                        </ul>
+                        <ul className="my-3 space-y-3">
+                            <li className="">
+                                <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                    Binance
+                                </a>
+                            </li>
+                        </ul>
                         <div className="flex flex-wrap justify-between">
-                            <p>Total a pagar:</p>
-                            <p>55$</p>
+                            <h4 class="flex items-baseline">
+                                <div class="flex flex-wrap w-full justify-between ">
+                                        <p class="mr-12 font-xl leading-7 tracking-widest">
+                                            Total a pagar:
+                                        </p>
+                                        <p class="flex items-center">
+                                            <span class="line-through text-secondary-dark font-discount-s mr-8">
+                                                US$13
+                                            </span>
+                                            <span class="texts-3xl text-red-[#e6215d] sm:hidden">
+                                                <span data-testid="line-through text-sm text-rose-500 product-price-currency">
+                                                US$
+                                                </span>
+                                                <span data-testid="product-price">
+                                                10
+                                                </span>
+                                            </span>
+                                            <span class="hidden sm:block font-price-s-md text-red-main">
+                                                <span data-testid="product-price-currency">US$</span>
+                                                <span data-testid="product-price">10</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </h4>
                         </div>
                     </div>
-                    <aside className="max-w-md w-96 bg-[#D2E0FB] p-14">
-                        <div className="container justify-center items-center">
-                            <img className="h-36" src="https://firebasestorage.googleapis.com/v0/b/ecommerce-ccs-blockchain.appspot.com/o/product-review.png?alt=media&token=e97ba839-fcbe-4b82-8d99-9ef441adff4a" alt="" />
-                            <h1>Título de Producto</h1>
-                            <p className="mt-8 mb-24 font-body4 text-gray-dark">Pedrito, el vendedor</p>
+                    <aside className="max-w-md w-96 bg-[#D2E0FB] p-4 border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="https://firebasestorage.googleapis.com/v0/b/ecommerce-ccs-blockchain.appspot.com/o/product-review.png?alt=media&token=e97ba839-fcbe-4b82-8d99-9ef441adff4a" alt="product" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-[473e6b] dark:text-white">Compra Necesaria</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum, tempora nam similique amet cumque, consequatur ex aspernatur nesciunt veritatis obcaecati adipisci animi omnis porro nulla quae ea corporis delectus!</p>
                         </div>
-                        <div>
-                            <div className="mb-16"></div>
-                            <p classNAme="flex py-16 border-t border-b border-solid font-link border-gray-main items-center" data-testid="product-total-resume">
-                                <span>Total</span>
-                                <span class="flex ml-auto">
-                                    <span class="text-base-main">S/ 44,99</span>
-                                    <span class="ml-4 line-through text-gray-dark">S/ 56</span>
-                                </span>
-                            </p>
-                        </div>
-                        <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+
+                        <button type="submit" className="inline-flex items-center justify-center w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Comprar
+                            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
                         </button>
                     </aside>
                 </div>
