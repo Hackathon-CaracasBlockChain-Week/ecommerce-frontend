@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'E-commerce Web3',
-  description: 'NextJS + TailwindCSS + Web3 = Love',
+  title: 'Ecommerce Web3 | CCS BlockChain Week Hackathon',
+  description: 'Esto es un proyecto para mejorar la experiencia de compra/venta de un Ecommerce',
 }
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className}>{children}</body>
     </html>
   )
